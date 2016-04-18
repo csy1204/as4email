@@ -1,11 +1,18 @@
+<div class="container">
 <h1>보낸 메일함이다!</h1>
+<br>
 <% @every_post.each do |p| %>
+
 제목: <%= p.title %><br>
 내용: <%= p.content %><br>
-시간: <%= p.created_at %><%= p.id %>
-<a href='/update_view/<%= p.id %>'>[수정]</a>
-<a href='/destroy/<%= p.id %>'>[삭제]</a>
+시간: <%= p.created_at %><%= p.id %><br>
+<div class="btn-group" role="group" aria-label="...">
+  <a href='/update_view/<%= p.id %>'><button type="button" class="btn btn-warning btn-xs">수정</button></a>
+  <a href='/destroy/<%= p.id %>'><button type="button" class="btn btn-danger btn-xs">삭제</button></a>
+</div>
 <hr>
-<% end %>
 
+<% end %>
+<br>
 <h2><a href='/'>글쓰기</a></h2>
+</div>
