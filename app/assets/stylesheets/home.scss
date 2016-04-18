@@ -1,0 +1,16 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@font-face { font-family:'NanumGothicWeb'; font-style:normal; font-weight:400; src: url('http://webfonts-cdn.mobilis.co.kr/webfonts/Nanum/NanumGothicCompact.eot');}
+@font-face { font-family:'NanumGothicWeb'; font-style:normal; font-weight:400; src: url('http://webfonts-cdn.mobilis.co.kr/webfonts/Nanum/NanumGothicCompact.woff') format('woff');}
+
+
+body {
+//    font-family: 'Montserrat', sans-serif;
+    font-family: 'NanumGothic', '나눔고딕','NanumGothicWeb', '맑은 고딕',나눔고딕,NanumGothic,돋움,dotum,AppleGothic,sans-serif;
+}
+
+
+

@@ -1,0 +1,11 @@
+<h1>보낸 메일함이다!</h1>
+<% @every_post.each do |p| %>
+제목: <%= p.title %><br>
+내용: <%= p.content %><br>
+시간: <%= p.created_at %><%= p.id %>
+<a href='/update_view/<%= p.id %>'>[수정]</a>
+<a href='/destroy/<%= p.id %>'>[삭제]</a>
+<hr>
+<% end %>
+
+<h2><a href='/'>글쓰기</a></h2>
