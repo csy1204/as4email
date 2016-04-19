@@ -1,21 +1,60 @@
-<div class = "container">
-    <form class="form-horizontal" action='sending' method='POST'>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Write a letter</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">편지 보내기</a></li>
+        <li><a href="/list">보낸 메일함</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<iframe width="0" height="0" src="https://www.youtube.com/embed/_ogDymI9BKM?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+
+<div class="container content-section text-center" style="margin-top: 200px">
+  
+      <p style="font-size:20px">
+        이 <span style="font-size:30px">꽃잎 우표</span> 대신,<br>
+        봉투에 부쳐 보내면<br> 
+        배달될 수 있을까<br>
+        <span style="font-size:30px">그리운 이</span>여,<br>
+        봄이 저무는 꽃 그늘 아래서<br> 
+        오늘은 이제 나도 너에게<br>
+        <span style="font-size:30px">마지막 편지</span>를 쓴다. </p>
+        <p>편지中 -오세영(1942~)</p>
+</div>  
+
+
+
+
+
+<div class="container content-section text-center" style="margin-top: 100px">
+  <form class="form-horizontal" action='sending' method='POST'>
       <div class="form-group">
         <label for="inputEmail3" class="col-sm-2 control-label">받는 사람</label>
-        <div class="col-sm-10">
+        <div class="col-sm-8">
           <input name="given" type="email" class="form-control" id="inputEmail3" placeholder="example@email.com">
         </div>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1" class="col-sm-2 control-label">제목</label>
-        <div class="col-sm-10">
-             <input name="head" type="text" class="form-control" id="exampleInputEmail1"> 
+        <div class="col-sm-8">
+             <input name="head" type="text" class="form-control" id="exampleInputEmail1" placeholder="즐거운 편지"> 
         </div>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1" class="col-sm-2 control-label">내용</label>
-        <div class="col-sm-10">
-         <textarea name="body" class="form-control" rows="5" id="comment"></textarea>   
+        <div class="col-sm-8">
+         <textarea name="body" class="form-control" rows="5" id="comment" placeholder="내 그대를 생각함은 항상 그대가 앉아 있는 배경에서 해가 지고 바람이 부는 일처럼 사소한 일일 것이나 언젠가 그대가 한없이 괴로움 속을 헤매일 때에 오랫동안 전해 오던 그 사소함으로 그대를 불러보리라. "></textarea>   
         </div>
       </div>
       <div class="text-center">

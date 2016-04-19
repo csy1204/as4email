@@ -14,19 +14,19 @@ class HomeController < ApplicationController
     new_post.content = @bird
     new_post.save
     
-    mg_client = Mailgun::Client.new("key-155e4eeb507734091129b3afac670bc3")
+#    mg_client = Mailgun::Client.new("key-155e4eeb507734091129b3afac670bc3")
     
-    message_params =  {
-                       from: 'josang1204@gmail.com',
-                       to: @green,
-                       subject: @heat,
-                       text: @bird
-                      }
+#    message_params =  {
+#                       from: 'josang1204@gmail.com',
+#                       to: @green,
+#                       subject: @heat,
+#                       text: @bird
+#                      }
     
-    result = mg_client.send_message('sandbox17622311ca6048dfbf7a84d22ec48697.mailgun.org', message_params).to_h!
+#    result = mg_client.send_message('sandbox17622311ca6048dfbf7a84d22ec48697.mailgun.org', message_params).to_h!
     
-    message_id = result['id']
-    message = result['message']
+#    message_id = result['id']
+#    message = result['message']
   
   end
   
