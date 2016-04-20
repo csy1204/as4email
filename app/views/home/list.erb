@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Write a letter</a>
+      <a class="navbar-brand" href="/"><span style="font-family: 'Pacifico', cursive;">Write a letter</span></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -52,43 +52,18 @@
   </tbody>
   <% end %>
 </table>
-
-
-
-<!--
-
-<% @every_post.each do |p| %>
-
-<table class="table table-reflow">
-  <thead>
-    <tr>
-      <th>제목</th>
-      <th>내용</th>
-      <th>시간</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="2"><%= p.title %></td>
-      <td rowspan="2"><%= p.content %></td>
-      <td rowspan="2"><%= p.created_at %></td>
-    </tr>
-    <tr>
-      <td colspan="3">  
-      <div class="btn-group" role="group" aria-label="...">
-      <a href='/update_view/<%= p.id %>'><button type="button" class="btn btn-warning btn-xs">수정</button></a>
-      <a href='/destroy/<%= p.id %>'><button type="button" class="btn btn-danger btn-xs">삭제</button></a>
-      </div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-<% end %>
-
--->
-
 <br>
 <a href="/"><button type="submit" class="btn btn-primary btn-lg" style="margin-bottom: 100px">메일 보내러 가기</button></a>
 </div>
+
+<script>
+  window.addEventListener("scroll", function() {
+      if (window.scrollY > 1) {
+          $('.navbar').fadeOut();
+      }
+      else {
+          $('.navbar').fadeIn();
+      }
+  },false);
+</script>
+
